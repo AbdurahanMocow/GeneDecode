@@ -1,0 +1,15 @@
+# Ignore virtual environment and system files
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore data files and outputs
+data/
+outputs/
+
+# VS Code & OS junk
+.vscode/
+.DS_Store
+Thumbs.db
