@@ -66,6 +66,6 @@ Future iterations will focus on integrating high-confidence variant annotation, 
 
 ---
 
-**Name:** Abdirahman Mocow  
+**Name:** Abdurahan Mocow  
 **Discipline:** Bioinformatics & Computational Biology  
 **Focus Areas:** Genomic Data Processing · Variant Interpretation · Translational Bioinformatics  
