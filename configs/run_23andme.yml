@@ -1,0 +1,12 @@
+input:
+  file: "data/raw/sample_23andme.txt"   # test file
+  source: "23andme"                     # future: ancestry, nebula
+
+output:
+  parsed_csv: "data/processed/23andme_variants_basic.csv"
+  annotated_csv: "data/processed/23andme_variants_annotated.csv"
+
+annotator:
+  limit: 1000                 # set 1000 for quick tests; -1 for all rows
+  requests_per_sec: 10
+  cache_file: "cache/ensembl_variation_cache.json"
