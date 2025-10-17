@@ -66,3 +66,19 @@ def annotate_rsids(
     ann = pd.DataFrame(out_rows)
     merged = df.merge(ann, on="rsid", how="left")
     return merged
+# ---- compatibility alias for pipeline ----
+def annotate_variants(
+    df: pd.DataFrame,
+    cache_file: str = "cache/ensembl_variation_cache.json",
+    limit: int = -1,
+    requests_per_sec: float = 10.0,
+) -> pd.DataFrame:
+    """
+    Wrapper to make annotate_rsids() compatible with run_23andme.py
+    """
+    return annotate_rsids(
+        df=df,
+        cache_file=cache_file,
+        limit=limit,
+        requests_per_sec=requests_per_sec,
+    )
